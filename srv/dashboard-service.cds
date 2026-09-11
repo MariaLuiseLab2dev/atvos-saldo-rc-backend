@@ -1,3 +1,4 @@
+@requires: 'authenticated-user'
 service DashboardService {
 
     function kpis(month: Integer, year: Integer) returns {

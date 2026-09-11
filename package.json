@@ -31,6 +31,9 @@
         "users": {
           "sapui5_prodev": {
             "password": "umasenhabemdificil"
+          },
+          "admin": {
+            "password": "123456"
           }
         }
       }

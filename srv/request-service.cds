@@ -1,5 +1,6 @@
 using { atvos.saldo.rc.entities as entities } from '../db/schema';
 
+@requires: 'authenticated-user'
 service RequestService {
 
     @readonly
