@@ -1,0 +1,15 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### BuyerRequests
+# @name BuyerRequests_GET
+GET {{server}}/odata/v4/request/BuyerRequests?$expand=material,group,classification
+Authorization: Basic {{username}}:{{password}}
+
+
+### Materials
+# @name Materials_GET
+GET {{server}}/odata/v4/request/Materials
+Authorization: Basic {{username}}:{{password}}

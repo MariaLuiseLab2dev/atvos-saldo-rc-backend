@@ -1,0 +1,39 @@
+{
+  "name": "atvos-saldo-rc",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "type": "module",
+  "dependencies": {
+    "@cap-js/sqlite": "^2.0.4",
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4.11.1",
+    "express": "^4",
+    "luxon": "^3.7.2"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.15.0",
+    "@sap/cds-dk": "^9"
+  },
+  "scripts": {
+    "start": "export DEBUG=sql && cds-serve"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      },
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "sapui5_prodev": {
+            "password": "umasenhabemdificil"
+          }
+        }
+      }
+    }
+  }
+}

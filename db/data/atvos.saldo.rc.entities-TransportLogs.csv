@@ -1,0 +1,11 @@
+id,status
+1,Nota Fiscal Emitida
+2,Ordem de Coleta Emitida
+3,Ordem de Coleta em Andamento
+4,Ordem de Coleta Realizada
+5,Coletada Descarregada no CD
+6,CTe Emitido,
+7,Carregamento de Transferência
+8,Descarregamento de Transferência
+9,Saiu para entrega
+10,Entrega Realizada

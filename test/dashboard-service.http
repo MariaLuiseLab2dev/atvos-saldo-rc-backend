@@ -1,0 +1,30 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### BuyerRequests
+# @name KIPS
+GET {{server}}/odata/v4/dashboard/kpis?month=07&year=2025
+Authorization: Basic {{username}}:{{password}}
+
+### BuyerRequests
+# @name OrderStatus
+GET {{server}}/odata/v4/dashboard/ordersStatus?month=07&year=2025
+Authorization: Basic {{username}}:{{password}}
+
+### Compare
+# @name Compare
+GET {{server}}/odata/v4/dashboard/productCompare?month=07&year=2025&material1=1fcc9df1e-2761-4b55-8f60-015b21066d78&material2=12a301b9-4c71-4181-a853-d29be7b6bd18
+Authorization: Basic {{username}}:{{password}}
+
+### totalPerRegion
+# @name totalPerRegion
+GET {{server}}/odata/v4/dashboard/totalPerRegion?month=07&year=2025
+Authorization: Basic {{username}}:{{password}}
+
+
+### statusPerBuyerGroup
+# @name statusPerBuyerGroup
+GET {{server}}/odata/v4/dashboard/statusPerBuyerGroup?month=07&year=2025
+Authorization: Basic {{username}}:{{password}}
